@@ -1,0 +1,13 @@
+2024-12-20 11:08:36.361071-03:00 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Error de Sintaxis en sentencia SQL "INSERT INTO PATIENTS (NAME, LAST_NAME, CARD_IDENTITY, ADMISSION_OF_DATE, ADDRESS_ID, EMAIL)  VALUES ('Juan', 'Perez', 37757084, '2024-12-19', 1, 'joni.illes@hotmail.com') [*]INSERT INTO DENTISTS (REGISTRATION, NAME, LAST_NAME) VALUES (123,'Jorge', 'Muelas')"
+Syntax error in SQL statement "INSERT INTO PATIENTS (NAME, LAST_NAME, CARD_IDENTITY, ADMISSION_OF_DATE, ADDRESS_ID, EMAIL)  VALUES ('Juan', 'Perez', 37757084, '2024-12-19', 1, 'joni.illes@hotmail.com') [*]INSERT INTO DENTISTS (REGISTRATION, NAME, LAST_NAME) VALUES (123,'Jorge', 'Muelas')"; SQL statement:
+INSERT INTO PATIENTS (NAME, LAST_NAME, CARD_IDENTITY, ADMISSION_OF_DATE, ADDRESS_ID, EMAIL)  VALUES ('Juan', 'Perez', 37757084, '2024-12-19', 1, 'joni.illes@hotmail.com') INSERT INTO DENTISTS (REGISTRATION, NAME, LAST_NAME) VALUES (123,'Jorge', 'Muelas') [42000-232]
+2024-12-20 11:16:50.201062-03:00 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLDataException: Conversión de datos fallida, convirtiendo "joni.illes@hotmail.com"
+Data conversion error converting "joni.illes@hotmail.com" [22018-232]
+2024-12-20 11:17:39.998077-03:00 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLDataException: Conversión de datos fallida, convirtiendo "joni.illes@hotmail.com"
+Data conversion error converting "joni.illes@hotmail.com" [22018-232]
+2024-12-20 11:17:48.237907-03:00 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLDataException: Conversión de datos fallida, convirtiendo "joni.illes@hotmail.com"
+Data conversion error converting "joni.illes@hotmail.com" [22018-232]
