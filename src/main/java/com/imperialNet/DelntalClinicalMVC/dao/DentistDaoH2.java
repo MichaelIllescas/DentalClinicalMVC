@@ -11,7 +11,7 @@ import java.util.List;
 public class DentistDaoH2 implements IDao<Dentist> {
     private static final String SQL_INSERT="INSERT INTO DENTISTS (REGISTRATION, "+
         "NAME, LAST_NAME) VALUES (?,?,?);";
-    private  final static String SQL_FIND_BY_ID="SELECT * DENTISTS WHERE ID=?";
+    private  final static String SQL_FIND_BY_ID="SELECT * FROM DENTISTS WHERE ID=?";
     private final static String SQL_UPDATE ="UPDATE DENTISTS SET REGISTRATION=?, NAME=?, LAST_NAME =? "+
             " WHERE ID =?";
     private  final static String SQL_DELETE="DELETE FROM DENTISTS WHERE ID=?";
@@ -52,7 +52,7 @@ public class DentistDaoH2 implements IDao<Dentist> {
             PreparedStatement ps = connection.prepareStatement(SQL_FIND_BY_ID);
             ps.setInt(1,id);
             ResultSet rs= ps.executeQuery();
-            AddressDaoH2 addressDaoH2=new AddressDaoH2();
+
 
             while (rs.next()){
 
